@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Tabel</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- pembungkus -->
+	<div class="pembungkus">
+		<!-- heading -->
+		<h1>The Top 5 of My Best Friend</h1>
+		<!-- akhir heading -->
+
+		<!-- tabel -->
+		<table>
+			<thead>
+				<tr>
+					<th>No.</th>
+					<th>Nama Kawanku</th>
+					<th>Alamat</th>
+					<th>Aksi</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="row__1">
+					<th>1.</th>
+					<td class="rubah">Nuraeni</td>
+					<td class="rubah">Cirebon</td>
+					<td class="hapus" id="hapus__1">Hapus</td>
+				</tr>
+				<tr id="row__2">
+					<th>2.</th>
+					<td class="rubah">Sangdiah</td>
+					<td class="rubah">Cirebon</td>
+					<td class="hapus" id="hapus__2">Hapus</td>
+				</tr>
+				<tr id="row__3">
+					<th>3.</th>
+					<td class="rubah">Rotika</td>
+					<td class="rubah">Cirebon</td>
+					<td class="hapus" id="hapus__3">Hapus</td>
+				</tr>
+				<tr id="row__4">
+					<th>4.</th>
+					<td class="rubah">Rosnita Amalia</td>
+					<td class="rubah">Cirebon</td>
+					<td class="hapus" id="hapus__4">Hapus</td>
+				</tr>
+				<tr id="row__5">
+					<th>5.</th>
+					<td class="rubah">Yuslia Devitri</td>
+					<td class="rubah">Cirebon</td>
+					<td class="hapus" id="hapus__5">Hapus</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- akhir tabel -->
+
+		<!-- tombol -->
+		<div class="tombol">
+			<a href="https://fadhilasyifa.github.io/">
+				<button type="submit">Beranda</button>
+			</a>
+		</div>
+		<!-- akhir tombol -->
+		
+	</div>
+	<!-- akhir pembungkus -->
+
+<script>
+    $(document).ready(function() {
+        $('.rubah').click(function() {
+			// alert(1)
+            let isi = $(this).text();
+			// alert(isi)
+
+            let isi2 = prompt('Ubah dengan', isi);
+            if(!isi2) return;
+			// alert (isi2)
+
+            $(this).text(isi2);
+        })
+
+        $('.hapus').click(function() {
+			// alert(1)
+            let yakin = confirm('Yakin mau menghapus?');
+            if(!yakin) return;
+
+            let id = $(this).prop('id');
+			// alert(id);
+			
+            let rid = id.split('__');
+            let baris_ke = rid[1];
+
+            // alert(baris_ke);
+			$('#row__'+ baris_ke).slideUp()
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    background-image: url(background.png);
+}
+
+.pembungkus {
+    margin: auto;
+    width: 100%;
+    max-width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: crimson;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tbody tr{
+    background-color: #fff;
+}
+
+thead tr {
+    background-color: pink;
+}
+
+tbody td:hover {
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+tbody th:hover {
+    background-color: hotpink;
+}
+
+thead th:hover {
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+.tombol {
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tombol a {
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    background-color: pink;
+}
+
+button:hover {
+    background-color: hotpink;;
+}
+

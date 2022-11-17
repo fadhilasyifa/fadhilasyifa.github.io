@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    width: 100%;
+}
+
+.pembungkus {
+    background-color: #fff;
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* header */
+header {
+    width: 100%;
+}
+
+.logo-ikmi {
+    float: left;
+    margin-top: -150px;
+    transition: 0.2s;
+	opacity: 90%;
+}
+
+.judul {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+.judul h2 {
+    font-size: 16px;
+    position: relative;
+    top: 12px;
+}
+
+.judul .j1 {
+    font-size: 100px;
+    float: left;
+    color: red;
+    letter-spacing: 10px;
+}
+
+.judul .j2 {
+    font-size: 60px;
+    position: absolute;
+    margin-top: 10px;
+    color: blue;
+}
+
+.judul .j3 {
+    font-size: 30px;
+    margin-top: 50px;
+    color: green;
+}
+
+.judul .strip {
+    position: absolute;
+    left: 510px;;
+    margin-top: -140px;
+    font-size: 130px;
+    color: red;
+}
+
+.lokasi {
+    float: right;
+    margin-right: -450px;
+    margin-top: -115px;
+}
+
+.lokasi .web a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lokasi .kampus {
+    font-weight: bold;
+}
+
+.lokasi p {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.garis1 {
+    width: 56%;
+    height: 35px;
+    background-color: red;
+    margin-top: 150px;
+}
+
+.garis1 p {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.garis2 {
+    width: 44%;
+    height: 35px;
+    float: right;
+    margin-top: -35px;
+    background-color: green;
+}
+
+.garis2 p {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.clear {
+    clear: left;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-family: "Trirong", sans-serif;
+    color: rgb(31, 29, 29);
+}
+
+.nosurat {
+    text-align: center;
+    font-size: 21px;
+    margin-top: -10px;
+}
+
+/* akhir header */
+
+/* media query */
+/* @media only screen and (max-width: 768px) { */
+    /* For mobile phones: */
+    /* .pembungkus {
+      width: 100%;
+    } */
+/* } */
+/* akhir media query */
